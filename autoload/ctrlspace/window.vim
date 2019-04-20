@@ -44,7 +44,7 @@ function! ctrlspace#window#Toggle(internal)
 	endif
 
 	" create the buffer first & set it up
-	silent! exe "noautocmd botright pedit CtrlSpace"
+	silent! exe "botright pedit CtrlSpace"
 	silent! exe "noautocmd wincmd P"
 	silent! exe "resize" s:config.Height
 
