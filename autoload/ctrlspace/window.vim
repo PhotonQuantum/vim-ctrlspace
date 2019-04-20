@@ -45,7 +45,7 @@ function! ctrlspace#window#Toggle(internal)
 
 	" create the buffer first & set it up
 	silent! exe "botright pedit CtrlSpace"
-	silent! exe "noautocmd wincmd P"
+	silent! exe "wincmd P"
 	silent! exe "resize" s:config.Height
 
 	" zoom start window in Zoom Mode
